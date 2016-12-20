@@ -41,7 +41,7 @@ day2_pm: "Variant Calling and Workflow Automation"
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
-  height="206px"
+  height="275px"
   scrolling="auto">
 </iframe>
 {% endif %}
@@ -133,6 +133,9 @@ research.
 </p>
 
 <hr/>
+<div class="row">
+  <div class="col-md-6">
+
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
@@ -148,6 +151,22 @@ research.
  </div>
 </div>
 
+
+{% if page.etherpad %}
+<p>
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+<!-- DO NOT EDIT SURVEY LINKS -->
+<p><em>Surveys</em></p>
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+<p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
+<p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
+
+
 <!--
   SCHEDULE
 
@@ -157,31 +176,6 @@ research.
 -->
 <h2>Preliminary Schedule</h2>
 
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
-<p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
-
-<!--
-  ETHERPAD
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
 <hr/>
 
